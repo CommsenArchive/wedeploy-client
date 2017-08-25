@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.commsen.wedeploy</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>wedeploy-client-bom</artifactId>
+	<packaging>pom</packaging>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.commsen.wedeploy</groupId>
+				<artifactId>com.commsen.wedeploy.client</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.commsen.wedeploy</groupId>
+				<artifactId>com.commsen.wedeploy.client.data</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.commsen.wedeploy</groupId>
+				<artifactId>com.commsen.wedeploy.transport.rest.okhttp</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+				<scope>runtime</scope>
+			</dependency>
+<!-- 			<dependency>
+				<groupId>com.commsen.wedeploy</groupId>
+				<artifactId>com.commsen.wedeploy.client.rest.simple</artifactId>
+				<version>0.1.0-SNAPSHOT</version>
+				<scope>runtime</scope>
+			</dependency>
+ -->		</dependencies>
+
+	</dependencyManagement>
+
+
+</project>

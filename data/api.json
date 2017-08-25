@@ -1,0 +1,26 @@
+[
+	{
+		"path": "/open/*",
+		"data": true
+	},
+	{
+		"path": "/writeProtected/*",
+		"data": true,
+		"method": "get"
+	},
+	{
+		"path": "/writeProtected/*",
+		"data": true,
+		"method": ["POST","PUT","DELETE"],
+		"auth": {
+	    "validator": "$auth != null"
+		}
+	},
+	{
+		"path": "/protected/*",
+		"data": true,
+		"auth": {
+			"validator": "$auth != null"
+		}
+	}
+]

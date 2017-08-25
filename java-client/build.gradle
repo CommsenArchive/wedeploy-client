@@ -1,0 +1,5 @@
+apply plugin: 'application'
+ 
+task run (overwrite: true, type: Exec) {
+	commandLine 'mvn', 'clean', 'test'
+}

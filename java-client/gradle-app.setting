@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <setting name="task-tab"> 
+    <setting name="show-description" value="true"/> 
+  </setting>  
+  <setting name="favorites-tab"/>  
+  <setting name="command_line-tab"/>  
+  <setting name="setup-tab"> 
+    <setting name="setup"> 
+      <setting name="custom-gradle-executor"/>  
+      <setting name="current-directory" value="/data/projects/COMMSEN/wedeploy/wedeploy-client/com.commsen.wedeploy.client"/>  
+      <setting name="log-level" value="DEBUG"/>  
+      <setting name="stack-trace-level" value="ALWAYS_FULL"/>
+      <setting name="show-output-on-error" value="false"/>
+    </setting> 
+  </setting>  
+  <setting name="main_panel"> 
+    <setting name="current-tab" value="Command Line"/> 
+  </setting>  
+  <setting name="Application_window-id"> 
+    <setting name="window_x" value="233"/>  
+    <setting name="window_y" value="124"/>  
+    <setting name="window_width" value="800"/>  
+    <setting name="window_height" value="800"/>  
+    <setting name="extended-state" value="0"/> 
+  </setting> 
+</root>
