@@ -1,4 +1,4 @@
-package com.commsen.wedeploy.client.data.test;
+package com.commsen.wedeploy.client;
 
 import java.io.IOException;
 import java.util.Properties;

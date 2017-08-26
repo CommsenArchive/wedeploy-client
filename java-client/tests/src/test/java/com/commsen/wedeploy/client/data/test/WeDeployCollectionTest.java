@@ -7,6 +7,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.commsen.wedeploy.client.BaseTest;
 import com.commsen.wedeploy.client.WeDeployClientException;
 import com.commsen.wedeploy.client.data.CollectionDTO;
 import com.commsen.wedeploy.client.data.WeDeployDataException;

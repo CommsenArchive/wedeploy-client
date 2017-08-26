@@ -1,10 +1,11 @@
-package com.commsen.wedeploy.client.data.test;
+package com.commsen.wedeploy.client.api.test;
 
 import java.io.IOException;
 
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.commsen.wedeploy.client.BaseTest;
 import com.commsen.wedeploy.client.WeDeployClientException;
 import com.commsen.wedeploy.client.api.WeDeployStatusDTO;
 

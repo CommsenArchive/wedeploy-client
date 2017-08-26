@@ -25,7 +25,7 @@ Provides API contracts (in the form of interfaces and data classes) for all supp
 
 Client for core WeDeploy services. Allows to:
 
- - check WeDeploy's status (see [StatusServiceTest](tests/src/test/java/com/commsen/wedeploy/client/data/test/StatusServiceTest.java) for usage exmple)
+ - check WeDeploy's status (see [StatusServiceTest](tests/src/test/java/com/commsen/wedeploy/client/api/test/StatusServiceTest.java) for usage exmple)
 
 ### `com.commsen.wedeploy.client.data`
 
@@ -50,7 +50,7 @@ BOM (Bill of Material) used by [Eccentric Modularity](https://github.com/azzazze
 
 If you are building Java (SpringBoot like) microservices to be deployed on WeDeploy - consider [Eccentric Modularity](https://github.com/azzazzel/EM)!  
 
-Have a look at the [source code of `tests` module](tests/src/test/java) for example of using the APIs!
+Have a look at the [source code of `tests` module](tests/src/test/java/com/commsen/wedeploy/client) for examples of using the APIs!
 
 ## License
 
