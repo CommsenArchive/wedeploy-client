@@ -1,7 +1,7 @@
 
 # Unofficial Java client for WeDeploy 
 
-This is client library for Java applications that need to talk to (WeDeploy)[http://wedeploy.com] services!
+This is client library for Java applications that need to talk to [WeDeploy](http://wedeploy.com) services!
 
 ## What it does?
 
