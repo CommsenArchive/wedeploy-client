@@ -25,14 +25,14 @@ Provides API contracts (in the form of interfaces and data classes) for all supp
 
 Client for core WeDeploy services. Allows to:
 
- - check WeDeploy's status
+ - check WeDeploy's status (see [StatusServiceTest](tests/src/test/java/com/commsen/wedeploy/client/data/test/StatusServiceTest.java) for usage exmple)
 
 ### `com.commsen.wedeploy.client.data`
 
 Client for core WeDeploy's `DATA` services. Allows to:
 
- - create / remove / update collections
- - create / remove / update documents
+ - create / remove / update collections (see [WeDeployCollectionTest](tests/src/test/java/com/commsen/wedeploy/client/data/test/WeDeployCollectionTest.java) for usage exmple)
+ - create / remove / update documents (see [WeDeployDocumentTest](tests/src/test/java/com/commsen/wedeploy/client/data/test/WeDeployDocumentTest.java) for usage exmple)
  - use Java beans or maps as documents
 
 ### `com.commsen.wedeploy.transport.rest.okhttp`
@@ -49,7 +49,8 @@ BOM (Bill of Material) used by [Eccentric Modularity](https://github.com/azzazze
  - OSGi containers - provision with `com.commsen.wedeploy.client` and whichever other modules you use
 
 If you are building Java (SpringBoot like) microservices to be deployed on WeDeploy - consider [Eccentric Modularity](https://github.com/azzazzel/EM)!  
- 
+
+Have a look at the [source code of `tests` module](tests/src/test/java) for example of using the APIs!
 
 ## License
 
