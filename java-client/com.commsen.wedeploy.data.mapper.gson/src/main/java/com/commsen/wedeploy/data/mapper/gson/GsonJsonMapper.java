@@ -1,4 +1,4 @@
-package com.commsen.wedeploy.mapper.gson;
+package com.commsen.wedeploy.data.mapper.gson;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -16,13 +16,17 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import aQute.bnd.annotation.headers.ProvideCapability;
+import aQute.bnd.annotation.headers.BundleCategory;
+import aQute.bnd.annotation.headers.BundleDevelopers;
+import aQute.bnd.annotation.headers.BundleDocURL;
+import aQute.bnd.annotation.headers.Category;
+import aQute.bnd.annotation.licenses.ASL_2_0;
 
-@Component (immediate = true)
-@ProvideCapability (
-	ns="com.commsen.wedeploy.client", 
-	value="service=WeDeployDataMapper"
-)
+@ASL_2_0
+@BundleCategory(value=Category.clients)
+@BundleDevelopers(name="Milen Dyankov", value="milendyankov@gmail.com")
+@BundleDocURL("https://github.com/azzazzel/wedeploy-client/tree/master/java-client#comcommsenwedeploydatamappergson")
+@Component
 public class GsonJsonMapper implements WeDeployDataMapper {
 
 	private Gson gson;

@@ -16,7 +16,6 @@ import com.commsen.wedeploy.client.WeDeployServiceWiring;
 import com.commsen.wedeploy.client.data.WeDeployDataMapper;
 import com.commsen.wedeploy.client.data.WeDeployDataService;
 import com.commsen.wedeploy.client.data.WeDeployDataStorage;
-import com.commsen.wedeploy.mapper.gson.GsonJsonMapper;
 import com.commsen.wedeploy.transport.rest.WeDeployRestClient;
 
 import aQute.bnd.annotation.headers.BundleCategory;
@@ -39,13 +38,19 @@ public class SimpleWeDeployDataService implements WeDeployDataService {
 			)
 	private volatile WeDeployRestClient restClient;
 
-	private WeDeployDataMapper dataMapper = new GsonJsonMapper();
+	@Reference(
+			cardinality = ReferenceCardinality.MANDATORY, 
+			policy = ReferencePolicy.DYNAMIC, 
+			policyOption = ReferencePolicyOption.GREEDY)
+	private volatile WeDeployDataMapper dataMapper;
 	
-	private WeDeployServiceWiring<WeDeployRestClient> wiring = new WeDeployServiceWiring<WeDeployRestClient>();
+	private WeDeployServiceWiring<WeDeployRestClient> wireRest = new WeDeployServiceWiring<WeDeployRestClient>();
+	private WeDeployServiceWiring<WeDeployDataMapper> wireDataMapper = new WeDeployServiceWiring<WeDeployDataMapper>();
 	
 	@Override
 	public WeDeployDataStorage connect(String project, String service, Map<String, Object> properties) throws WeDeployClientException {
-		restClient = wiring.ifMissingLoadViaSPI(restClient, WeDeployRestClient.class);
+		restClient = wireRest.ifMissingLoadViaSPI(restClient, WeDeployRestClient.class);
+		dataMapper = wireDataMapper.ifMissingLoadViaSPI(dataMapper, WeDeployDataMapper.class);
 
 		if (properties == null) {
 			properties = new HashMap<String, Object>();

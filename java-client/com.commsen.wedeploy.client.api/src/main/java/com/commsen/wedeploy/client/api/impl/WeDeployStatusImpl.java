@@ -13,9 +13,10 @@ import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 import com.commsen.wedeploy.client.WeDeployClientException;
 import com.commsen.wedeploy.client.WeDeployServiceWiring;
+import com.commsen.wedeploy.client.api.WeDeployStatusDTO;
+import com.commsen.wedeploy.client.api.WeDeployStatusService;
 import com.commsen.wedeploy.client.data.WeDeployDataException;
 import com.commsen.wedeploy.client.data.WeDeployDataMapper;
-import com.commsen.wedeploy.mapper.gson.GsonJsonMapper;
 import com.commsen.wedeploy.transport.rest.WeDeployResponse;
 import com.commsen.wedeploy.transport.rest.WeDeployRestClient;
 
@@ -38,9 +39,14 @@ public class WeDeployStatusImpl implements WeDeployStatusService {
 			policyOption = ReferencePolicyOption.GREEDY)
 	private volatile WeDeployRestClient restClient;
 
-	private volatile WeDeployDataMapper dataMapper = new GsonJsonMapper();
+	@Reference(
+			cardinality = ReferenceCardinality.MANDATORY, 
+			policy = ReferencePolicy.DYNAMIC, 
+			policyOption = ReferencePolicyOption.GREEDY)
+	private volatile WeDeployDataMapper dataMapper;
 
-	private WeDeployServiceWiring<WeDeployRestClient> wiring = new WeDeployServiceWiring<WeDeployRestClient>();
+	private WeDeployServiceWiring<WeDeployRestClient> wireRest = new WeDeployServiceWiring<WeDeployRestClient>();
+	private WeDeployServiceWiring<WeDeployDataMapper> wireDataMapper = new WeDeployServiceWiring<WeDeployDataMapper>();
 	
 
 	@Override
@@ -52,7 +58,8 @@ public class WeDeployStatusImpl implements WeDeployStatusService {
 	@Override
 	public WeDeployStatusDTO get(boolean verbose) throws WeDeployClientException {
 
-		restClient = wiring.ifMissingLoadViaSPI(restClient, WeDeployRestClient.class);
+		restClient = wireRest.ifMissingLoadViaSPI(restClient, WeDeployRestClient.class);
+		dataMapper = wireDataMapper.ifMissingLoadViaSPI(dataMapper, WeDeployDataMapper.class);
 		
 		WeDeployResponse response;
 		URI uri = API_URI;
