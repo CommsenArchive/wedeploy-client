@@ -12,7 +12,6 @@ import com.commsen.wedeploy.transport.rest.AbstractBaseRestClient;
 import com.commsen.wedeploy.transport.rest.WeDeployResponse;
 import com.commsen.wedeploy.transport.rest.WeDeployRestClient;
 
-import aQute.bnd.annotation.headers.ProvideCapability;
 import okhttp3.Headers;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -26,10 +25,6 @@ import okhttp3.Response;
 		"http.client=OkHttp",
 		"service.ranking:Integer=100"
 	} 
-)
-@ProvideCapability (
-	ns="com.commsen.wedeploy.client", 
-	value="service=WeDeployRestClient"
 )
 public class OkHttpRestClient extends AbstractBaseRestClient {
 

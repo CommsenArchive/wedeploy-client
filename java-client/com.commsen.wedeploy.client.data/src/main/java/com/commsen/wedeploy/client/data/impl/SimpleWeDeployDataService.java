@@ -16,20 +16,11 @@ import com.commsen.wedeploy.client.WeDeployServiceWiring;
 import com.commsen.wedeploy.client.data.WeDeployDataMapper;
 import com.commsen.wedeploy.client.data.WeDeployDataService;
 import com.commsen.wedeploy.client.data.WeDeployDataStorage;
-import com.commsen.wedeploy.client.data.impl.annotations.RequireDataMapper;
-import com.commsen.wedeploy.client.data.impl.annotations.RequireRestClient;
 import com.commsen.wedeploy.mapper.gson.GsonJsonMapper;
 import com.commsen.wedeploy.transport.rest.WeDeployRestClient;
 
-import aQute.bnd.annotation.headers.ProvideCapability;
 
 @Component
-@RequireDataMapper
-@RequireRestClient
-@ProvideCapability (
-	ns="com.commsen.wedeploy.client", 
-	value="service=WeDeployDataService"
-)
 public class SimpleWeDeployDataService implements WeDeployDataService {
 
 	@Reference (
