@@ -12,7 +12,7 @@ import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 import com.commsen.wedeploy.client.WeDeployClientException;
-import com.commsen.wedeploy.client.WeDeployServiceWiring;
+import com.commsen.wedeploy.client.SPI;
 import com.commsen.wedeploy.client.data.WeDeployDataMapper;
 import com.commsen.wedeploy.client.data.WeDeployDataService;
 import com.commsen.wedeploy.client.data.WeDeployDataStorage;
@@ -44,13 +44,12 @@ public class SimpleWeDeployDataService implements WeDeployDataService {
 			policyOption = ReferencePolicyOption.GREEDY)
 	private volatile WeDeployDataMapper dataMapper;
 	
-	private WeDeployServiceWiring<WeDeployRestClient> wireRest = new WeDeployServiceWiring<WeDeployRestClient>();
-	private WeDeployServiceWiring<WeDeployDataMapper> wireDataMapper = new WeDeployServiceWiring<WeDeployDataMapper>();
+	private SPI spi = new SPI();
 	
 	@Override
 	public WeDeployDataStorage connect(String project, String service, Map<String, Object> properties) throws WeDeployClientException {
-		restClient = wireRest.ifMissingLoadViaSPI(restClient, WeDeployRestClient.class);
-		dataMapper = wireDataMapper.ifMissingLoadViaSPI(dataMapper, WeDeployDataMapper.class);
+		restClient = spi.wireIfNull(restClient, WeDeployRestClient.class);
+		dataMapper = spi.wireIfNull(dataMapper, WeDeployDataMapper.class);
 
 		if (properties == null) {
 			properties = new HashMap<String, Object>();

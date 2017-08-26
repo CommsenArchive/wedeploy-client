@@ -15,18 +15,17 @@ import aQute.bnd.annotation.licenses.ASL_2_0;
 @BundleDocURL("https://github.com/azzazzel/wedeploy-client/tree/master/java-client#comcommsenwedeployclient")
 public class WeDeployClient {
 
-	WeDeployServiceWiring<WeDeployDataService> wireDataService = new WeDeployServiceWiring<WeDeployDataService>();
+	SPI spi = new SPI();
 
-	WeDeployServiceWiring<WeDeployStatusService> wireStatusService = new WeDeployServiceWiring<WeDeployStatusService>();
 
 	public WeDeployDataService data() throws WeDeployClientException {
 		
-		return wireDataService.ifMissingLoadViaSPI(null, WeDeployDataService.class);
+		return spi.wire(WeDeployDataService.class);
 	}
 
 	public WeDeployStatusService status() throws WeDeployClientException {
 		
-		return wireStatusService.ifMissingLoadViaSPI(null, WeDeployStatusService.class);
+		return spi.wire(WeDeployStatusService.class);
 		
 	}
 

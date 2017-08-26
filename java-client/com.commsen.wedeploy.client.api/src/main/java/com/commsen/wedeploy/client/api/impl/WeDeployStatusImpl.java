@@ -12,7 +12,7 @@ import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 import com.commsen.wedeploy.client.WeDeployClientException;
-import com.commsen.wedeploy.client.WeDeployServiceWiring;
+import com.commsen.wedeploy.client.SPI;
 import com.commsen.wedeploy.client.api.WeDeployStatusDTO;
 import com.commsen.wedeploy.client.api.WeDeployStatusService;
 import com.commsen.wedeploy.client.data.WeDeployDataException;
@@ -45,8 +45,7 @@ public class WeDeployStatusImpl implements WeDeployStatusService {
 			policyOption = ReferencePolicyOption.GREEDY)
 	private volatile WeDeployDataMapper dataMapper;
 
-	private WeDeployServiceWiring<WeDeployRestClient> wireRest = new WeDeployServiceWiring<WeDeployRestClient>();
-	private WeDeployServiceWiring<WeDeployDataMapper> wireDataMapper = new WeDeployServiceWiring<WeDeployDataMapper>();
+	private SPI spi = new SPI();
 	
 
 	@Override
@@ -58,8 +57,8 @@ public class WeDeployStatusImpl implements WeDeployStatusService {
 	@Override
 	public WeDeployStatusDTO get(boolean verbose) throws WeDeployClientException {
 
-		restClient = wireRest.ifMissingLoadViaSPI(restClient, WeDeployRestClient.class);
-		dataMapper = wireDataMapper.ifMissingLoadViaSPI(dataMapper, WeDeployDataMapper.class);
+		restClient = spi.wireIfNull(restClient, WeDeployRestClient.class);
+		dataMapper = spi.wireIfNull(dataMapper, WeDeployDataMapper.class);
 		
 		WeDeployResponse response;
 		URI uri = API_URI;
