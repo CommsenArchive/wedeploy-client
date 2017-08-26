@@ -19,7 +19,16 @@ import com.commsen.wedeploy.client.data.WeDeployDataStorage;
 import com.commsen.wedeploy.mapper.gson.GsonJsonMapper;
 import com.commsen.wedeploy.transport.rest.WeDeployRestClient;
 
+import aQute.bnd.annotation.headers.BundleCategory;
+import aQute.bnd.annotation.headers.BundleDevelopers;
+import aQute.bnd.annotation.headers.BundleDocURL;
+import aQute.bnd.annotation.headers.Category;
+import aQute.bnd.annotation.licenses.ASL_2_0;
 
+@ASL_2_0
+@BundleCategory(value=Category.clients)
+@BundleDevelopers(name="Milen Dyankov", value="milendyankov@gmail.com")
+@BundleDocURL("https://github.com/azzazzel/wedeploy-client/tree/master/java-client#comcommsenwedeployclientdata")
 @Component
 public class SimpleWeDeployDataService implements WeDeployDataService {
 
