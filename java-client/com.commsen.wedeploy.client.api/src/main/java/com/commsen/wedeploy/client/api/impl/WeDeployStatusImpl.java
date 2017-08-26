@@ -1,4 +1,4 @@
-package com.commsen.wedeploy.client.api;
+package com.commsen.wedeploy.client.api.impl;
 
 import static com.commsen.wedeploy.client.WeDeployConstants.API_URI;
 
