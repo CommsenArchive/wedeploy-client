@@ -33,7 +33,7 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/azzazzel/EM</url>
+		<url>https://github.com/azzazzel/wedeploy-client</url>
 		<connection>scm:git:https://github.com/azzazzel/wedeploy-client.git</connection>
 	</scm>
 
@@ -167,8 +167,8 @@
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 		<site>
-			<id>GitHub</id>
-			<url>scm:git:https://github.com/azzazzel/wedeploy-client.git</url>
+			<id>GitHub pages</id>
+			<url>https://azzazzel.github.com/wedeploy-client</url>
 		</site>
 	</distributionManagement>
 
