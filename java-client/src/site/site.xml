@@ -1,54 +1,53 @@
-<project 
-	xmlns="http://maven.apache.org/DECORATION/1.7.0" 
+<project xmlns="http://maven.apache.org/DECORATION/1.7.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 http://maven.apache.org/xsd/decoration-1.7.0.xsd"
-	name="${project.name}"
-	>
+	name="${project.name}">
 
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>1.6</version>
+	</skin>
 
-  <skin>
-    <groupId>org.apache.maven.skins</groupId>
-    <artifactId>maven-fluido-skin</artifactId>
-    <version>1.6</version>
-  </skin>
+	<custom>
+		<fluidoSkin>
+			<topBarEnabled>true</topBarEnabled>
+			<topBarContainerStyle>width: 90%;</topBarContainerStyle>
+			<topBarIcon>
+				<name>WeDeploy Java client</name>
+				<href>/index.html</href>
+			</topBarIcon>
 
-<custom>
- 	<fluidoSkin>
-   		<topBarEnabled>true</topBarEnabled>
-    		<topBarContainerStyle>width: 90%;</topBarContainerStyle>
-		<topBarIcon>
-       		<name>WeDeploy Java client</name>
-        		<href>/index.html</href>
-      	</topBarIcon>
-      
-    		<sideBarEnabled>false</sideBarEnabled>
-		<leftColumnClass>span3</leftColumnClass>
-    		<bodyColumnClass>span9</bodyColumnClass>
-      
-    		<googleSearch/>
-    		<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
-    		<copyrightClass>pull-right</copyrightClass>
+			<sideBarEnabled>false</sideBarEnabled>
+			<leftColumnClass>span3</leftColumnClass>
+			<bodyColumnClass>span9</bodyColumnClass>
 
-		<twitter>
-        		<user>milendyankov</user>
-        		<showUser>true</showUser>
-        		<showFollowers>true</showFollowers>
-      	</twitter>
-      	<facebookLike />
-      	<googlePlusOne />
-      	
-	</fluidoSkin>
-</custom>
+			<googleSearch />
+			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+			<copyrightClass>pull-right</copyrightClass>
 
-  <bannerLeft>
-    <name>${project.name}</name>
-  </bannerLeft>
-  <body>
-    <links>
-      <item name="${project.name}" href="${project.url}"/>
-    </links>
-    <menu ref="parent" />
-    <menu ref="modules" />
-    <menu ref="reports" />
-  </body>
+			<twitter>
+				<user>milendyankov</user>
+				<showUser>true</showUser>
+				<showFollowers>true</showFollowers>
+			</twitter>
+			<facebookLike />
+			<googlePlusOne />
+
+		</fluidoSkin>
+	</custom>
+
+	<publishDate position="right"/>
+	<version position="right" />
+	
+	<body>
+
+		<links>
+			<item name="WeDeploy" href="http://wedeploy.com/" />
+		</links>
+		<breadcrumbs>
+			<item name="${project.name}" />
+		</breadcrumbs>
+		<menu ref="modules" />
+	</body>
 </project>

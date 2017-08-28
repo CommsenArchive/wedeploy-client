@@ -1,12 +1,24 @@
-<project name="${project.name}">
-  <bannerLeft>
-    <name>${project.name}</name>
-  </bannerLeft>
+<project xmlns="http://maven.apache.org/DECORATION/1.7.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 http://maven.apache.org/xsd/decoration-1.7.0.xsd"
+	name="${project.name}">
+
+	<custom>
+		<fluidoSkin>
+			<topBarIcon>
+				<name>${project.name}</name>
+			</topBarIcon>
+		</fluidoSkin>
+	</custom>
+
   <body>
-    <links>
-      <item name="${project.name}" href="${project.url}"/>
-    </links>
-    <menu ref="parent" />
+  	<head><![CDATA[
+  		<link rel="stylesheet" href="../css/site.css" />
+  	]]></head>
+	<breadcrumbs>
+		<item name="${project.parent.name}" href="../"/>
+		<item name="Gson mapper" />
+	</breadcrumbs>
     <menu ref="modules" />
     <menu ref="reports" />
   </body>
