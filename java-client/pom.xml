@@ -275,6 +275,12 @@
 				</plugins>
 			</build>
 		</profile>
+		<profile>
+			<id>uninstall</id>
+			<build>
+				<defaultGoal>build-helper:remove-project-artifact</defaultGoal>
+			</build>
+		</profile>
 	</profiles>
 
 	<modules>
