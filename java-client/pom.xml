@@ -52,7 +52,7 @@
 
 	<modules>
 		<module>com.commsen.wedeploy.client</module>
-		<module>com.commsen.wedeploy.client.api</module>
+		<module>com.commsen.wedeploy.client.cloud</module>
 		<module>com.commsen.wedeploy.client.data</module>
 		<module>com.commsen.wedeploy.data.mapper.gson</module>
 		<module>com.commsen.wedeploy.transport.rest.okhttp</module>

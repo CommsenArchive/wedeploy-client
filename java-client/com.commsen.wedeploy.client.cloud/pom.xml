@@ -8,7 +8,7 @@
 		<version>0.2.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>com.commsen.wedeploy.client.api</artifactId>
+	<artifactId>com.commsen.wedeploy.client.cloud</artifactId>
 
 	<properties>
 		<_.eccentric.modularity.metadata />

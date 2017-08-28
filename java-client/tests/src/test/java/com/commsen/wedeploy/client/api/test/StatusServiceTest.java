@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import com.commsen.wedeploy.client.BaseTest;
 import com.commsen.wedeploy.client.WeDeployClientException;
-import com.commsen.wedeploy.client.api.WeDeployStatusDTO;
+import com.commsen.wedeploy.client.cloud.WeDeployStatusDTO;
 
 public class StatusServiceTest extends BaseTest {
 

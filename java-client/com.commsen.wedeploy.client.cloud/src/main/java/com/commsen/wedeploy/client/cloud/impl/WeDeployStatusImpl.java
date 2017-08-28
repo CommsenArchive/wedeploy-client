@@ -1,4 +1,4 @@
-package com.commsen.wedeploy.client.api.impl;
+package com.commsen.wedeploy.client.cloud.impl;
 
 import static com.commsen.wedeploy.client.WeDeployConstants.API_URI;
 
@@ -11,10 +11,10 @@ import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 
-import com.commsen.wedeploy.client.WeDeployClientException;
 import com.commsen.wedeploy.client.SPI;
-import com.commsen.wedeploy.client.api.WeDeployStatusDTO;
-import com.commsen.wedeploy.client.api.WeDeployStatusService;
+import com.commsen.wedeploy.client.WeDeployClientException;
+import com.commsen.wedeploy.client.cloud.WeDeployStatusDTO;
+import com.commsen.wedeploy.client.cloud.WeDeployStatusService;
 import com.commsen.wedeploy.client.data.WeDeployDataException;
 import com.commsen.wedeploy.client.data.WeDeployDataMapper;
 import com.commsen.wedeploy.transport.rest.WeDeployResponse;

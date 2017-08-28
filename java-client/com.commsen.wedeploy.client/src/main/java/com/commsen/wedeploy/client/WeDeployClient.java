@@ -1,6 +1,6 @@
 package com.commsen.wedeploy.client;
 
-import com.commsen.wedeploy.client.api.WeDeployStatusService;
+import com.commsen.wedeploy.client.cloud.WeDeployStatusService;
 import com.commsen.wedeploy.client.data.WeDeployDataService;
 
 import aQute.bnd.annotation.headers.BundleCategory;

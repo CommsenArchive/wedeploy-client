@@ -8,7 +8,7 @@ import org.junit.contrib.java.lang.system.EnvironmentVariables;
 
 import com.commsen.wedeploy.client.WeDeployClient;
 import com.commsen.wedeploy.client.WeDeployClientException;
-import com.commsen.wedeploy.client.api.WeDeployStatusService;
+import com.commsen.wedeploy.client.cloud.WeDeployStatusService;
 import com.commsen.wedeploy.client.data.WeDeployDataService;
 import com.commsen.wedeploy.client.data.WeDeployDataStorage;
 

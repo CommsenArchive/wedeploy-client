@@ -1,4 +1,4 @@
-package com.commsen.wedeploy.client.api;
+package com.commsen.wedeploy.client.cloud;
 
 public interface WeDeployApiService {
 
