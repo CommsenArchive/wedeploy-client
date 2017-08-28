@@ -1,7 +1,7 @@
 
 ## Unofficial Java client for WeDeploy 
 
-<img style="float:right; margin:20px; width:200px;" src="https://azzazzel.github.io/wedeploy-client/images/wedeploy-logo.png" />
+<img align="right" width="200" src="https://azzazzel.github.io/wedeploy-client/images/wedeploy-logo.png" />
 
 This is unofficial Java client library for WeDeploy! 
 
@@ -9,7 +9,7 @@ This is unofficial Java client library for WeDeploy!
 
 This client allows Java applications to talk to WeDeploy cloud services as if those were local ones.
 
-See [project site](https://azzazzel.github.io/wedeploy-client) for details! 
+See [project site](https://azzazzel.github.io/wedeploy-client) for more details! 
 
 
 ### License
