@@ -78,7 +78,7 @@ Here is simple example of `Data` service:
 	collection.delete(id);
 	collection.save(anotherUser);
 
-In modular environment (OSGi and projects biult with [Eccentric Modularity (EM)](https://github.com/azzazzel/EM)) you can simply inject the service 
+In modular environment (OSGi and projects built with [Eccentric Modularity (EM)](https://github.com/azzazzel/EM)) you can simply inject the service 
 
 	@Reference
 	private WeDeployDataService weDeployDataService;
