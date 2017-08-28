@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.commsen.wedeploy</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.2.0-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>wedeploy-client-bom</artifactId>
@@ -16,25 +16,25 @@
 			<dependency>
 				<groupId>com.commsen.wedeploy</groupId>
 				<artifactId>com.commsen.wedeploy.client</artifactId>
-				<version>0.2.0-SNAPSHOT</version>
+				<version>${project.version}</version>
 				<scope>runtime</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.commsen.wedeploy</groupId>
 				<artifactId>com.commsen.wedeploy.client.data</artifactId>
-				<version>0.2.0-SNAPSHOT</version>
+				<version>${project.version}</version>
 				<scope>runtime</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.commsen.wedeploy</groupId>
 				<artifactId>com.commsen.wedeploy.transport.rest.okhttp</artifactId>
-				<version>0.2.0-SNAPSHOT</version>
+				<version>${project.version}</version>
 				<scope>runtime</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.commsen.wedeploy</groupId>
 				<artifactId>com.commsen.wedeploy.data.mapper.gson</artifactId>
-				<version>0.2.0-SNAPSHOT</version>
+				<version>${project.version}</version>
 				<scope>runtime</scope>
 			</dependency>
 		</dependencies>

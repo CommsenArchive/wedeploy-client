@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.commsen.wedeploy</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.2.0-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>com.commsen.wedeploy.client.cloud</artifactId>
@@ -18,7 +18,7 @@
 		<dependency>
 			<groupId>com.commsen.wedeploy</groupId>
 			<artifactId>com.commsen.wedeploy.client</artifactId>
-			<version>0.2.0-SNAPSHOT</version>
+			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
@@ -28,5 +28,20 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-	
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-baseline-maven-plugin</artifactId>
+				<configuration>
+					<base>
+						<groupId>com.commsen.wedeploy</groupId>
+						<artifactId>com.commsen.wedeploy.client.api</artifactId>
+						<version>0.1.0</version>
+					</base>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
