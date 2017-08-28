@@ -22,14 +22,15 @@
 		<dependency>
 			<groupId>com.commsen.wedeploy</groupId>
 			<artifactId>com.commsen.wedeploy.client</artifactId>
-			<version>${project.version}</version>
 		</dependency>
-
 		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>osgi.core</artifactId>
-			<version>6.0.0</version>
-			<scope>provided</scope>
+			<groupId>com.commsen.em</groupId>
+			<artifactId>em.annotations</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
 		</dependency>
 	</dependencies>
 

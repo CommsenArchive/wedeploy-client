@@ -21,52 +21,43 @@
 		<dependency>
 			<groupId>com.commsen.wedeploy</groupId>
 			<artifactId>com.commsen.wedeploy.client.data</artifactId>
-			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>com.commsen.wedeploy</groupId>
 			<artifactId>com.commsen.wedeploy.client.cloud</artifactId>
-			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>com.commsen.wedeploy</groupId>
 			<artifactId>com.commsen.wedeploy.transport.rest.okhttp</artifactId>
-			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>com.commsen.wedeploy</groupId>
 			<artifactId>com.commsen.wedeploy.data.mapper.gson</artifactId>
-			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>com.commsen.em</groupId>
+			<artifactId>em.annotations</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>com.github.stefanbirkner</groupId>
 			<artifactId>system-rules</artifactId>
-			<version>1.16.1</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.2.3</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 
 	<build>
