@@ -1,0 +1,8 @@
+com.commsen.wedeploy.client
+com.commsen.wedeploy.client.cloud
+com.commsen.wedeploy.client.cloud.impl
+com.commsen.wedeploy.client.data
+com.commsen.wedeploy.client.data.impl
+com.commsen.wedeploy.client.rest.okhttp
+com.commsen.wedeploy.data.mapper.gson
+com.commsen.wedeploy.transport.rest

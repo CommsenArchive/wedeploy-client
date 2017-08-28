@@ -1,0 +1,4 @@
+com.commsen.wedeploy.client
+com.commsen.wedeploy.client.cloud
+com.commsen.wedeploy.client.data
+com.commsen.wedeploy.transport.rest

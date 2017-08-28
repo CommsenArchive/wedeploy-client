@@ -1,0 +1,5 @@
+com.commsen.wedeploy.client
+com.commsen.wedeploy.client.api.test
+com.commsen.wedeploy.client.data
+com.commsen.wedeploy.client.data.test
+com.commsen.wedeploy.data.mapper.gson
