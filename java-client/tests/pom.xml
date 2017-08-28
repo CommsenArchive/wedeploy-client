@@ -8,6 +8,10 @@
 	</parent>
 
 	<artifactId>tests</artifactId>
+	<name>WeDeploy Java client :: tests</name>
+	<description>
+		Tests for "WeDeploy Java client :: API" implementations.
+	</description>
 	
 	<properties>
 		<skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>

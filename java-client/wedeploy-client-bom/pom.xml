@@ -10,6 +10,10 @@
 
 	<artifactId>wedeploy-client-bom</artifactId>
 	<packaging>pom</packaging>
+	<name>WeDeploy Java client :: BOM</name>
+	<description>
+		BOM (Bill of Material) to be used by provisioning tools! 
+	</description>
 
 	<dependencyManagement>
 		<dependencies>
@@ -39,6 +43,5 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 
 </project>

@@ -9,6 +9,10 @@
 	</parent>
 
 	<artifactId>com.commsen.wedeploy.client</artifactId>
+	<name>WeDeploy Java client :: API</name>
+	<description>
+		Module provides Java API (set of interfaces) to define contracts for accessing WeDeploy's APIs (set of remote services) 
+	</description>
 
 	<properties>
 		<_.eccentric.modularity.metadata />

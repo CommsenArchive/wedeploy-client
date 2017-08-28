@@ -7,9 +7,9 @@
 	<packaging>pom</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 
-	<name>Java client for WeDeploy</name>
+	<name>WeDeploy Java client</name>
 	<description>
-		Client library for Java applications that need to talk to WeDeploy services!
+		WeDeploy client library for Java! Allows Java applications to talk to WeDeploy cloud services as if they were local ones!
 	</description>
 	<url>https://github.com/azzazzel/wedeploy-client</url>
 

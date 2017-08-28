@@ -8,6 +8,10 @@
 	</parent>
 
 	<artifactId>com.commsen.wedeploy.data.mapper.gson</artifactId>
+	<name>WeDeploy Java client :: mapper :: gson</name>
+	<description>
+		Module provides Gson based implementation of data mapper used by "WeDeploy Java client :: data".
+	</description>
 
 	<properties>
 		<_.eccentric.modularity.metadata />

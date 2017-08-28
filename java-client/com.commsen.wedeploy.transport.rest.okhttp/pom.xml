@@ -8,6 +8,10 @@
 	</parent>
 
 	<artifactId>com.commsen.wedeploy.transport.rest.okhttp</artifactId>
+	<name>WeDeploy Java client :: transport :: okhttp</name>
+	<description>
+		Module provides OkHttp based implementation of data transport used by all "WeDeploy Java client :: API" implementations.
+	</description>
 
 	<properties>
 		<_.eccentric.modularity.metadata />
