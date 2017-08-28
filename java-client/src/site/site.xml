@@ -49,5 +49,6 @@
 			<item name="${project.name}" />
 		</breadcrumbs>
 		<menu ref="modules" />
+	    <menu ref="reports" />
 	</body>
 </project>

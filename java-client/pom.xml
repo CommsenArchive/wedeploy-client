@@ -11,7 +11,7 @@
 	<description>
 		WeDeploy client library for Java! Allows Java applications to talk to WeDeploy cloud services as if they were local ones!
 	</description>
-	<url>https://github.com/azzazzel/wedeploy-client</url>
+	<url>https://azzazzel.github.io/wedeploy-client</url>
 
 	<licenses>
 		<license>
@@ -33,7 +33,7 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/azzazzel/wedeploy-client</url>
+		<url>https://github.com/azzazzel/wedeploy-client/blob/v.${project.version}/java-client</url>
 		<connection>scm:git:https://github.com/azzazzel/wedeploy-client.git</connection>
 	</scm>
 
@@ -168,7 +168,7 @@
 		</repository>
 		<site>
 			<id>GitHub pages</id>
-			<url>https://azzazzel.github.com/wedeploy-client</url>
+			<url>https://azzazzel.github.io/wedeploy-client</url>
 		</site>
 	</distributionManagement>
 
