@@ -17,6 +17,8 @@
 		<_.eccentric.modularity.metadata />
 		<_.eccentric.modularity.cfg.includePackages>okhttp3.*</_.eccentric.modularity.cfg.includePackages>
 		<_.eccentric.modularity.cfg.ignorePackages>android.util.*</_.eccentric.modularity.cfg.ignorePackages>
+
+		<site.dir>${project.basedir}/../../../wedeploy-client-site</site.dir>
 	</properties>
 
 	<dependencies>

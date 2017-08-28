@@ -15,6 +15,7 @@
 
 	<properties>
 		<_.eccentric.modularity.metadata />
+		<site.dir>${project.basedir}/../../../wedeploy-client-site</site.dir>
 	</properties>
 
 	<dependencies>

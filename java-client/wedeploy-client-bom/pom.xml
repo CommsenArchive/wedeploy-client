@@ -15,6 +15,10 @@
 		BOM (Bill of Material) to be used by provisioning tools! 
 	</description>
 
+	<properties>
+		<site.dir>${project.basedir}/../../../wedeploy-client-site</site.dir>
+	</properties>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

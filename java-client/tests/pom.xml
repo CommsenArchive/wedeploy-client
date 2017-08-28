@@ -15,6 +15,7 @@
 	
 	<properties>
 		<skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
+		<site.dir>${project.basedir}/../../../wedeploy-client-site</site.dir>
 	</properties>
 
 	<dependencies>
