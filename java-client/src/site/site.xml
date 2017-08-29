@@ -44,7 +44,9 @@
 
 		<links>
 			<item name="WeDeploy" href="http://wedeploy.com/" />
+			<item name="WeDeploy Maven Plugin" href="http://milendyankov.com/wedeploy-maven-plugin" />
 		</links>
+		
 		<breadcrumbs>
 			<item name="${project.name}" />
 		</breadcrumbs>
